@@ -1,0 +1,13 @@
+package rectangulosyovalos;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main(String[] args)
+	{
+		String input = JOptionPane.showInputDialog("Ingrese 1 para dibujar Rectangulos \n"
+				+ "Ingrese 2 para dibujar Ovalos");
+		int eleccion = Integer.parseInt(input);
+		Shapes panel = new Shapes(eleccion);
+	}
+}
