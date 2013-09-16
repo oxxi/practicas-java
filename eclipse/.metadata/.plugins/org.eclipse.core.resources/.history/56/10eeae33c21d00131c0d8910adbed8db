@@ -1,0 +1,15 @@
+package polimorfismo;
+
+public abstract class Empleado {
+	private String primerNombre;
+	private String apellidoPaterno;
+	private String numeroSeguroSocila;
+	
+	//Constructor de la clase
+	public Empleado(String nombre, String apellido, String nss){
+		this.primerNombre = nombre;
+		this.apellidoPaterno = apellido;
+		this.numeroSeguroSocila = nss;
+	}
+	//setter y getter
+}

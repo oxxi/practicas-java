@@ -1,0 +1,20 @@
+package polimorfismo;
+
+public class EmpleadoPorComision  extends Empleado{
+	private double ventasBrutas;
+	private double tarifaComision;
+	//constructor de la clase
+	public EmpleadoPorComision(String nombre, String apellido, String nss, double ventas, double tarifa)
+	{
+		super(nombre,apellido,nss);
+		setVentasBrutas(ventas);
+		setTarifaComision(tarifa);
+	}
+
+	@Override
+	public double ingreso() {
+		
+		return 0;
+	}
+
+}

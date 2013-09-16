@@ -1,0 +1,27 @@
+package polimorfismo;
+
+public class EmpleadoPorComision  extends Empleado{
+	private double ventasBrutas;
+	private double tarifaComision;
+	//constructor de la clase
+	public EmpleadoPorComision(String nombre, String apellido, String nss, double ventas, double tarifa)
+	{
+		super(nombre,apellido,nss);
+		setVentasBrutas(ventas);
+		setTarifaComision(tarifa);
+	}
+	//setter y getter ventas brutas
+	public void setVentasBrutas(double vts){
+		if(vts>=0.0)
+			this.ventasBrutas = vts;
+		else
+			throw new IllegalArgumentException("Las ventas deben se mayor a 0.0");
+	}
+
+	@Override
+	public double ingreso() {
+		
+		return 0;
+	}
+
+}

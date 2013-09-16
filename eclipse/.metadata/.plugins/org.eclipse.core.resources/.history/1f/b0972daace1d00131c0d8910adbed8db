@@ -1,0 +1,13 @@
+package polimorfismo;
+
+public class PruebaPolimorfismo {
+
+	public static void main(String[] args) {
+		EmpleadoAsalariado empleadoAsalariado = new EmpleadoAsalariado("Jose", "Ramos", "000-001", 12000.00);
+		EmpleadoPorHora empleadoPorHora = new EmpleadoPorHora("Karen", "Ramos", "00234-1", 10000.00, 10);
+		EmpleadoBaseMasComision empleadoBaseMasComision = new EmpleadoBaseMasComision("Juan", 
+														"Piura", "5555-5555", 120, .50, 10000.0);
+		
+	}
+
+}
