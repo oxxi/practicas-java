@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="FileSystemImportWizard">
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="1025" key="dialogWidth"/>
 		<item value="526" key="dialogHeight"/>
 		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.preferences"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
+			<item value="nav"/>
 			<item value="fon"/>
 			<item value="pa"/>
 		</list>
 		<list key="orderedElements">
+			<item value="org.eclipse.ui.navigate.showIn(org.eclipse.ui.navigate.showIn.targetId=org.eclipse.ui.views.ResourceNavigator)"/>
 			<item value="org.eclipse.ui.preferencePages.ColorsAndFonts"/>
 			<item value="org.eclipse.jdt.ui.PackageExplorer"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
@@ -32,8 +38,10 @@
 	<section name="ShowViewDialog">
 		<item value="311" key="DIALOG_WIDTH"/>
 		<item value="80" key="DIALOG_Y_ORIGIN"/>
-		<item value="438" key="DIALOG_HEIGHT"/>
 		<item value="536" key="DIALOG_X_ORIGIN"/>
+		<item value="438" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 </section>

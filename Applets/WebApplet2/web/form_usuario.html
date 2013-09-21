@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./lib/style.css">
+	<title>Administracion de Usuario</title>
+</head>
+<body>
+    <form action="AgregarUsuario" method="GET">
+        <label>Usuario</label>
+        <input type="text" id="txtusuario" name="txtusuario">
+        <label>Contraseña</label>
+        <input type="password" id="txtclave" name="txtclave">
+        <label>Nombre</label>
+        <input type="text" id="txtnombre" name="txtnombre">
+        <br/>
+        <select id="cmbTipo" name="cmbTipo">
+            <option value="a">Administrador</option>
+            <option value="u">Usuario</option>
+        </select>
+        <br/>
+        <input type="submit" id="btnenviar" value="Enviar">
+    </form>
+</body>
+</html>

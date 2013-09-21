@@ -1,0 +1,11 @@
+package com.textFieldAndPassworTF;
+
+public class TestJTextField {
+
+	public static void main(String[] args) {
+		TextFieldFrame textFieldFrame = new TextFieldFrame();
+		
+
+	}
+
+}

@@ -4,3 +4,15 @@
 *.jar
 *.war
 *.ear
+/Applets/applets/nbproject/private/
+/Applets/applets/build/
+/Applets/applets/dist/
+/Applets/PrimeraApplet/nbproject/private/
+/Applets/PrimeraApplet/build/
+/Applets/WebApplet2/nbproject/private/
+/Applets/WebApplet2/build/
+/Applets/simpleCrud/nbproject/private/
+/Applets/simpleCrud/build/
+/Applets/simpleCrud/dist/
+/CRUD_Simple/nbproject/private/
+/CRUD_Simple/build/

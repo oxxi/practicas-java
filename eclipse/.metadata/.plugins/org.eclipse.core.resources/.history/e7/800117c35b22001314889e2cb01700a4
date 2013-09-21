@@ -1,0 +1,16 @@
+package packPrincipal;
+import java.sql.Connection;
+
+public class ConexionDB {
+	public static Connection getConexion(){
+		String conexion;
+		try {
+			//com.microsoft.sqlserver.jdbc.SQLServerDriver 
+			//oracle.jdbc.OracleDriver
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return conexion;
+	}
+}

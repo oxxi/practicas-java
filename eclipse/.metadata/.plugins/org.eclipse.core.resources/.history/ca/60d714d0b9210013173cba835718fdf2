@@ -1,0 +1,16 @@
+package paquetePrincipal;
+
+
+
+public class Sentencias extends ConexionDB {
+	
+	public Sentencias(){
+		try{
+			
+		}catch(Exception e ){
+			
+		}
+	}
+	
+}
+

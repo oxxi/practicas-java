@@ -1,0 +1,12 @@
+package packPrincipal;
+
+import java.awt.Frame;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Principal extends JPanel {
+	JFrame frame = new JFrame();
+	
+
+}

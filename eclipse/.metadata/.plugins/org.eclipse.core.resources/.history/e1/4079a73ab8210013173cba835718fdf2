@@ -1,0 +1,13 @@
+package paquetePrincipal;
+
+import java.beans.Statement;
+
+public class Sentencias extends ConexionDB {
+Statement sentencia;
+	try{
+		
+	}catch(Exception e ){
+		
+	}
+}
+}
