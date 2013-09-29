@@ -1,0 +1,27 @@
+package paquetePrincipal;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("unused")
+		Statement st;
+		Connection conn = ConexionDB.getConnection();
+		if (conn!=null) {
+			JOptionPane.showMessageDialog(null, "Se realizo la Conexion");
+		}
+		try {
+			st = conn.createStatement(
+					ResultSet.TYPE_SCROLL_INSENSITIVE,
+					ResultSet.CONCUR_READ_ONLY);
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Error al crear el Statement "+e.getMessage());
+		}
+	}
+
+}

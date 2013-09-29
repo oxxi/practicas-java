@@ -1,0 +1,22 @@
+package juegoProbabilidades;
+
+import java.util.Random;
+
+public class Craps {
+	public Craps(){
+		
+	}
+	@SuppressWarnings("unused")
+	private static final Random randomNumber = new Random();
+	//estados del juegos
+	@SuppressWarnings("unused")
+	private enum Estado {CONTINUA,GANO,PERDIO};
+	//tiros comunes del dado
+	private static final int DOS_UNOS = 2;
+	private static final int TRES = 3;
+	private static final int SIETE = 7;
+	private static final int ONCE = 11;
+	private static final int DOCE =12;
+	
+	
+}

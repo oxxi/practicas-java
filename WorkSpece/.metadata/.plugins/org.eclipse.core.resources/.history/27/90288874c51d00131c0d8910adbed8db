@@ -1,0 +1,29 @@
+package polimorfismo;
+
+public class EmpleadoPorHora extends Empleado {
+
+	private double sueldo;
+	private double horas;
+	//Constructor de la clase
+	public EmpleadoPorHora(String nombre, String apellido, String nss, double sueldoPorHora,
+			double horasTrabajadas){
+		super(nombre,apellido,nss);
+		establecerSueldo(sueldoPorHora);
+		establecerHoras(horasTrabajadas);
+	}
+	//establecer el sueldo
+	public void establecerSueldo(double sueldoPorHoras){
+		if(sueldoPorHoras >=0.0)
+			sueldo = sueldoPorHoras;
+		else
+			throw new IllegalArgumentException("El sueldo Por Hora debe ser mayor a 0.0");
+	}
+	
+	
+	@Override
+	public double ingreso() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,22 @@
+package polimorfismo;
+
+public class Factura implements PorPagar {
+	private String numeroPieza;
+	private String descripcionPieza;
+	private int cantidad;
+	private double precioPorArticulo;
+	//constructor de la clase
+	public Factura(String pieza, String descripcion,int cuenta, double precio)
+	{
+		this.numeroPieza = pieza;
+		this.descripcionPieza = descripcion;
+		this.cantidad = cuenta;
+		this.precioPorArticulo = precio;
+	}
+	
+	
+	@Override
+	public String toString(){
+		return "";
+	}
+}

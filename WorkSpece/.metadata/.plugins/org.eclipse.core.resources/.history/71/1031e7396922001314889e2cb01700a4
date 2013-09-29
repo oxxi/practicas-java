@@ -1,0 +1,20 @@
+package packPrincipal;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Principal extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 968321233437484949L;
+	public static void main(String[] args){
+		JFrame frame = new JFrame();
+		frame.setSize(650,450);
+		frame.setLocationRelativeTo(null);
+		frame.setVisible(true);
+	}
+	
+	
+	
+}

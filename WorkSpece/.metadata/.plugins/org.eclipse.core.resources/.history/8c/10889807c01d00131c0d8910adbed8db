@@ -1,0 +1,7 @@
+package polimorfismo;
+
+public class EmpleadoPorComision {
+	public EmpleadoPorComision(){
+		
+	}
+}

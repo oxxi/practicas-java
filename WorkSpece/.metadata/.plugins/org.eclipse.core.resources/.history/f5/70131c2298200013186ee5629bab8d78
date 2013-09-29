@@ -1,0 +1,21 @@
+package paquetePrincipal;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class LabelFrame extends JFrame {
+	private JLabel label1;
+	private JLabel label2;
+	private JLabel label3;
+	
+	//constructor de la clase
+	public LabelFrame(){
+		super("Test Label");
+		//Crear los label
+		label1 = new JLabel("Label con Texto");
+		label1.setToolTipText("Label 1");
+		add(label1);
+		Icon bug  new ImageIcon(getClass().getResource("bug1.png"));
+	}
+}

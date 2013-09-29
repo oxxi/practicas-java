@@ -1,0 +1,40 @@
+package polimorfismo;
+
+public abstract class Empleado implements PorPagar {
+	private String primerNombre;
+	private String apellidoPaterno;
+	private String numeroSeguroSocila;
+	
+	//Constructor de la clase
+	public Empleado(String nombre, String apellido, String nss){
+		this.primerNombre = nombre;
+		this.apellidoPaterno = apellido;
+		this.numeroSeguroSocila = nss;
+	}
+	//setter y getter
+	public void setNombre(String nombre)
+	{
+		this.primerNombre = nombre;
+	}
+	public void setApellido(String apellido){
+		this.apellidoPaterno = apellido;
+	}
+	public void setNss(String nss){
+		this.numeroSeguroSocila = nss;
+	}
+	public String getNombre(){
+		return this.primerNombre;
+	}
+	public String getApellido(){
+		return this.apellidoPaterno;
+	}
+	public String getNss(){
+		return this.numeroSeguroSocila;
+	}
+	//metodo toString
+	@Override
+	public String toString(){
+		return String.format("%s %s\nnumero de seguro social: %s", getNombre(),getApellido(),getNss());
+	}//fin del metodo 
+	public abstract double ingreso();
+}

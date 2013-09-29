@@ -1,0 +1,10 @@
+package polimorfismo;
+
+public class EmpleadoAsalariado extends Empleado{
+	private double salarioSemanal;
+	//crear constructor
+	public EmpleadoAsalariado(String nombre, String apellido, String nss, double salario){
+		super(nombre,apellido,nss);
+	}
+	
+}

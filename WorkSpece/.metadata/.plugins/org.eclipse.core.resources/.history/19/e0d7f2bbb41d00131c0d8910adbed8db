@@ -1,0 +1,19 @@
+package pintarSonrisa;
+
+import javax.swing.JFrame;
+
+public class PintarSmile {
+
+	public static void main(String[] args) {
+		DreawSmile panel = new DreawSmile();
+		JFrame application = new JFrame();
+		
+		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		application.setSize(230,250);
+		application.add(panel);
+		application.setTitle("Sonriza");
+		application.setLocationRelativeTo(null);
+		application.setVisible(true);
+	}
+
+}

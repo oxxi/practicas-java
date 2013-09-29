@@ -1,0 +1,75 @@
+package polimorfismo;
+
+public class Factura implements PorPagar {
+	private String numeroPieza;
+	private String descripcionPieza;
+	private int cantidad;
+	private double precioPorArticulo;
+	//constructor de la clase
+	public Factura(String pieza, String descripcion,int cuenta, double precio)
+	{
+		this.numeroPieza = pieza;
+		this.descripcionPieza = descripcion;
+		
+		setCantidad(cuenta);
+		setPrecioPorArticulo(precio);
+		
+	}
+	
+	//getter y setter
+	public String getNumeroPieza() {
+		return numeroPieza;
+	}
+
+
+	public String getDescripcionPieza() {
+		return descripcionPieza;
+	}
+
+
+	public int getCantidad() {
+		return cantidad;
+	}
+
+
+	public double getPrecioPorArticulo() {
+		return precioPorArticulo;
+	}
+
+//Setters
+	public void setNumeroPieza(String numeroPieza) {
+		this.numeroPieza = numeroPieza;
+	}
+
+
+	public void setDescripcionPieza(String descripcionPieza) {
+		this.descripcionPieza = descripcionPieza;
+	}
+
+
+	public void setCantidad(int cantidad) {
+		if (cantidad >=0 ) 
+			this.cantidad = cantidad;
+		else
+			throw new IllegalArgumentException("La Cantidad debe ser mayor de 0.0");
+		
+	}
+
+
+	public void setPrecioPorArticulo(double precioPorArticulo) {
+		this.precioPorArticulo = precioPorArticulo;
+	}
+
+
+	@Override
+	public String toString(){
+		return "";
+	}
+
+
+	@Override
+	public double getMontoPago() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

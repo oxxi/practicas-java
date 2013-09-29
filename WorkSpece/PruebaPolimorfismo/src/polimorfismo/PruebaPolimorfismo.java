@@ -1,0 +1,52 @@
+package polimorfismo;
+//pagina 458
+public class PruebaPolimorfismo {
+
+	public static void main(String[] args) {
+		/*EmpleadoAsalariado empleadoAsalariado = new EmpleadoAsalariado("Jose", "Ramos", "000-001", 12000.00);
+		EmpleadoPorHora empleadoPorHora = new EmpleadoPorHora("Karen", "Ramos", "00234-1", 10000.00, 10);
+		EmpleadoBaseMasComision empleadoBaseMasComision = new EmpleadoBaseMasComision("Juan", 
+														"Piura", "5555-5555", 120, .50, 10000.0);
+		System.out.println("Empleados Procesados Por Separado\n");
+		System.out.printf("%s\n%s: $%,.2f\n\n", empleadoAsalariado, " Ingresos",
+						 empleadoAsalariado.ingreso());
+		System.out.printf("%s\n%s: $%,.2f\n\n", empleadoPorHora, 
+						" Ingresos", empleadoPorHora.ingreso());
+		System.out.printf("%s\n%s: $%,.2f\n\n", empleadoBaseMasComision,
+				" Ingreso ", empleadoBaseMasComision.ingreso());
+		//arreglo de 3 elementos
+		Empleado[] empleados = new Empleado[3];
+		//inicializacion de elementos
+		empleados[0] = empleadoAsalariado;
+		empleados[1] = empleadoPorHora;
+		empleados[2] = empleadoBaseMasComision;
+		
+		System.out.println("Empleados Procesados por Polimorfismo ");
+		
+		for (Empleado empleadoActual: empleados) {
+			System.out.println(empleadoActual);
+			if (empleadoActual instanceof EmpleadoBaseMasComision) {
+				EmpleadoBaseMasComision empleado  = (EmpleadoBaseMasComision) empleadoActual;
+				empleado.setSalarioBase(1.10* empleado.getSalarioBase());
+				System.out.printf("El nuevo Salario base con 10%% de aumento es: $%,.2f ",empleado.getSalarioBase());
+			}//fin if 
+			System.out.printf("ingreso: $%,.2f\n\n",empleadoActual.ingreso());
+		}//fin for
+		for (int i = 0; i < empleados.length; i++) {
+			System.out.printf("El Empleado %d es un %s\n",i,
+							empleados[i].getClass().getName());
+		}*/
+		
+		PorPagar[] objetosPorPagar = new PorPagar[3] ;
+		objetosPorPagar[0] = new Factura("0123", "asiento", 2, 375.0);
+		objetosPorPagar[1] = new Factura("7412", "llanat", 4, 75.90);
+		objetosPorPagar[2] = new EmpleadoAsalariado("Jose", "Ramos", "001100-001", 12000.0);
+		
+		for(PorPagar porPagarActual: objetosPorPagar)
+		{
+			System.out.printf("%s \n%s: $%,.2f\n\n",porPagarActual.toString(),
+					"pago Vencido", porPagarActual.getMontoPago());
+		}
+	}
+
+}

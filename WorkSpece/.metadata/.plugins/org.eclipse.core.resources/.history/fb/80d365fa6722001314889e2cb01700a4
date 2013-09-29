@@ -1,0 +1,18 @@
+package packPrincipal;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+import javax.swing.JOptionPane;
+
+public class Principal {
+	Statement st = null;
+	public static void main(String[] args) {
+		Connection conn = ConexionDB.getConexion();
+		if (conn!=null) {
+			JOptionPane.showMessageDialog(null, "Se realizo Conexion");
+		}
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package juegoProbabilidades;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int miPnto = 0;
+		
+		Craps juego = new Craps();
+		
+		
+
+	}
+
+}

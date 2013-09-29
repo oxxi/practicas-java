@@ -1,0 +1,21 @@
+package packPrincipal;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class ConexionDB {
+	public static Connection getConexion(){
+		Connection conexion = null;
+		try {
+			//com.microsoft.sqlserver.jdbc.SQLServerDriver 
+			//oracle.jdbc.OracleDriver
+			Class.forName("com.mysql.jdbc.Driver");
+			String server ="jdbc:mysql://localhost/";
+			String usuario = "root";
+			String password = "";
+			conexion = DriverManager.getConnection(server,usuario,password);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return conexion;
+	}
+}
